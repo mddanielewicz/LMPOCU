@@ -1,0 +1,176 @@
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*================================
+           Mobile Style
+=================================*/
+
+/*================================
+           Font Standard
+=================================*/
+
+h1 {
+	margin: 9px 0;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 700;
+	font-size: 2.5rem;
+	letter-spacing: .3rem;
+	color: #DBB50B;
+}
+
+h2 {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+	font-size: 2rem;
+	color: #091C85;
+}
+
+h3 {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+	color: #091C85;
+}
+
+p {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.3rem;
+	color: #fff;
+}
+
+body {
+	width: 100%;
+}
+
+
+
+/*================================
+           Home: Header
+=================================*/
+
+#header {
+	width: 100%;
+	background-color: #091C85;
+	/*height: 75px;*/
+}
+
+#header h1 {
+	width: 87%;
+	float: right;
+	text-align: center
+}
+
+
+
+/*================================
+           Home: Nav
+=================================*/
+
+#nav img{
+	display: block;
+	width: 60px;
+	height: 60px;
+}
+
+#nav ul {
+	display: none;
+}
+
+#nav img:hover + ul, #nav ul:hover{
+	display: inline-block;
+	position: absolute;
+	background-color: #DBB50B;
+	width: 60%;
+	padding: 20px 0 20px 0;
+}
+
+.login {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #091C85;
+	line-height: 1.5rem;
+}
+
+.form_button {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+	width: 65%;
+	margin: 0 auto;
+	margin: 5 0px;
+}
+
+.seporator {
+	width: 70%;
+	border-top: 3px solid #fff;
+	margin: 25px;
+}
+
+#nav li {
+	margin: 0 0 0 25px;
+}
+
+#nav a {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #091C85;
+	line-height: 2rem;
+	font-weight: bold;
+}
+
+#nav a:hover {
+	color: #fff;
+	font-weight: bold;
+}
+
+/*================================
+           Links
+=================================*/
+
+a
