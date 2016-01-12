@@ -78,11 +78,12 @@ p {
 	font-family: 'Noto Sans', sans-serif;
 	font-weight: 400;
 	font-size: 1.3rem;
-	color: #fff;
+	color: #091C85;
 }
 
 body {
 	width: 100%;
+	background-color: #f2f2f2;
 }
 
 
@@ -169,8 +170,31 @@ body {
 	font-weight: bold;
 }
 
+
+
 /*================================
-           Links
+   Home: News & Announcements
 =================================*/
 
-a
+#main_content {
+	width: 100%;
+	margin: 25px 0 0 0;
+	padding-bottom: 40px;
+}
+
+#main_content h2 {
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+#main_content p {
+	width: 90%;
+	text-align: justify;
+	margin: 0 auto;
+}
+
+.content_seporator {
+	width: 75%;
+	border-bottom: 3px solid #DBB50B;
+	margin: 40px auto;
+}
