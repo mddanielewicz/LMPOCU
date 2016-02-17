@@ -3,11 +3,12 @@
 	<title>LMPOCU</title>
 	<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css\main_style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </head>
 <body>
-	<div id="header">
+	<div class="header">
 		<h1>LMPOCU</h1>
-			<div id="nav">
+			<div class="nav">
 				<img src="img\menu.png">
 					<ul>
 						<li class="login">
@@ -22,42 +23,293 @@
 						</li>
 						<div class="seporator"></div>
 						<li class="nav_link"><a href="#">Home</a></li>
-						<li class="nav_link"><a href="#">News</a></li>
-						<li class="nav_link"><a href="#">Products</a></li>
-						<li class="nav_link"><a href="#">Rates</a></li>
-						<li class="nav_link"><a href="#">Location</a></li>
-						<li class="nav_link"><a href="#">Contact</a></li>
+						<li class="nav_link"><a href="#">Products</a>
+							<ul>
+								<li class="sec_link"><a href="#">Checking</li>
+								<li class="sec_link"><a href="#">Savings</li>
+								<li class="sec_link"><a href="#">Loans</li>
+								<li class="sec_link"><a href="#">Investing</li>
+							</ul>
+						</li>
+						<li class="nav_link"><a href="#">Staff</a>
+							<ul>
+								<li class="sec_link"><a href="#">Board Members</li>
+								<li class="sec_link"><a href="#">Management Staff</li>
+								<li class="sec_link"><a href="#">Loan Officers</li>
+								<li class="sec_link"><a href="#">Customer Service</li>
+							</ul>
+						</li>
 						<li class="nav_link"><a href="#">History</a></li>
-						<li class="nav_link"><a href="#">Board</a></li>
 						<li class="nav_link"><a href="#">Policies</a></li>
-						<li class="nav_link"><a href="#">Sponsors</a></li>
+						<li class="nav_link"><a href="#">Membership</a></li>
+						<li class="nav_link"><a href="#">Locations</a></li>
 					</ul>
 			</div><!--end nav-->
 	</div><!--end header-->
-	<div id="main_content">
-		<div id="news">
+	<div class="main_content">
+		<div class="news">
 			<h2>News and announcements</h2>
 			<p>This is where new policies, promotional, or maintence information can go. I would like to allow for a couple of items to be listed with a timer to automatically switch between them unless interupted. Depending of the length of the text, only a portion will be displayed with a link to the full information wherever it is being displayed.</p>
 		</div><!--end news-->
-		<div class="content_seporator"></div>
-		<div id="products">
+	<div class="content_seporator"></div>
+		<div class="products">
 			<h2>Products</h2>
-				<img src="img/savings.png" alt="savings" class="products_sav">
-					<ul class="sav_info">
-						<li><h3>Regular Savings</h3><p>Info about regular share account.</li>
-						<li><h3>High Interest Savings</h3><p>Info about high interest account.</p></li>
-					</ul>
-				<img src="img/checkings.png" alt="checkings_logo" class="products_check">
-				<img src="img/loan.png" alt="loan_logo" class="product_loan">
-		</div><!--end products-->
-		<div id="rates">
-		</div><!--end rates-->
-		<div id="locations">
+			<div class="checkLink">
+				<h3>Checking</h3>
+			</div>
+			<div class="checkSlide" style="display:none;">
+				
+				<div class="info">
+					<p>Regular checking at LMPOCU is built to be quick and easy.<br><br> Members enrolled can access their funds at any 5/3rd Bank without a service fee.<br><br>Also, your debit card can be used at any business that accepts MasterCard!<br><br>All of these benefits can be enjoyed without worrying about maintaining a minimum balance!</p>
+				</div></div>
+			<div class="savLink"><h3>Saving</h3></div>
+			<div class="savSlide" style="display: none">
+				<div class="info">
+					<p>We strive to make saving simple for you. We do not require a minimum balance before you start to earn dividends.<br><br>Enjoy opening as many linked accounts to help you as you save for diferent life projects.<br><br>When you open an account five dollars is held as your membership stake in our credit union.</p>
+				</div>
+				<div class="rates">
+					<table>
+						<tr>
+							<th>Bank</th>
+							<th>Products</th>
+							<th>Rate</th>
+						</tr>
+						<tr>
+							<td>LMPOCU</td>
+							<td>Ragular Share</td>
+							<td>0.05%</td>
+						</tr>
+						<tr>
+							<td>Chase Bank</td>
+							<td>Chase Savings</td>
+							<td>0.01%</td>
+						</tr>
+						<tr>
+							<td>PNC Bank</td>
+							<td>Virtual Wallet</td>
+							<td>0.01%</td>
+						</tr>
+						<tr>
+							<td>BB&T</td>
+							<td>BB&T eSavings</td>
+							<td>0.05%</td>
+						</tr>
+					</table>
+				</div>
+				<div class="calc">
+					<h3>Calculator</h3>
+					<form action="#">
+						<label for="deposit">Inital Deposit: </label><br>
+						<input type="number" id="deposit" name="deposit"><br>
+						<label for="interest">Interest Rate: </label><br>
+						<input type="number" id="rate" name="interest" value="0.05"><br>
+						<label for="time">Length</label><br>
+						<input type="radio" id="time" value="6 Months" name="length">6 Months</input><br>
+						<input type="radio" id="time" value="1 Year" name="length">1 Year</input><br>
+						<input type="radio" id="time" value="2 Years" name="length">2 Year</input><br>
+						<input type="radio" id="time" value="5 Years" name="length">5 Year</input><br>
+						<label for="balance">Balance: </label><br>
+						<input type="number" id="balance" name="balance" value=""><br>
+						<input type="button" id="submit" name="Submit" value="submit"></input>
+					</form>
+
+				</div>
+			</div>
+			<div class="loanLink"><h3>Financing</h3></div>
+			<div class="loanSlide" style="display: none">
+				<div class="info">
+					<p>General information about checking products. Maybe make a list.</p>
+				</div>
+				<div class="rates">
+					<p>Rates will go here. Include Rate compare.</p>
+				</div>
+				<div class="calc">
+					<p>Calculator will go here.</p>
+				</div>
+			</div>
+			<div class="investLink"><h3>Investing</h3></div>
+			<div class="investSlide" style="display: none">
+				<div class="info">
+					<p>General information about checking products. Maybe make a list.</p>
+				</div>
+				<div class="rates">
+					<p>Rates will go here. Include Rate compare.</p>
+				</div>
+				<div class="calc">
+					<p>Calculator will go here.</p>
+				</div>
+			</div>
+			</div><!--end products-->
+	<div class="content_seporator"></div>
+		<div class="locations">
+			<h2>Locations</h2>
+			<div class="mainLink">
+				<h3>West Market Street</h3>
+			</div>
+			<div class="mainSlide" style="display: none;">
+				<p>800 West Market Street<br>
+				Louisville, KY 40214</p><br><br>
+				<a href="tel:502-584-7134">Phone: 502-584-734</a><br><br>
+				<div class="hourTable">
+					<table>
+						<tr>
+							<th>Weekday</th>
+							<th>Hours</th>
+							<th>Status</th>
+						</tr>
+						<tr>
+							<td>Sunday</td>
+							<td>Closed</td>
+						</tr>
+						<tr>
+							<td>Monday</td>
+							<td>9:00am - 3:30pm</td>
+							<td class="statusMon"></td>
+						</tr>
+						<tr>
+							<td>Tuesday</td>
+							<td>9:00am - 3:30pm</td>
+							<td class="statusTues"></td>
+						</tr>
+						<tr>
+							<td>Wednesday</td>
+							<td>9:00am - 1:00pm</td>
+							<td class="statusWed"></td>
+						</tr>
+						<tr>
+							<td>Thursday</td>
+							<td>9:00am - 3:30pm</td>
+							<td class="statusThrus"></td>
+						</tr>
+						<tr>
+							<td>Friday</td>
+							<td>8:00am - 5:00pm</td>
+							<td class="statusFri"></td>
+						</tr>
+					</table>
+				</div><!--end hourTable-->
+			</div>
+			<div class="outLoopLink">
+				<h3>Outer Loop</h3>
+			</div>
+			<div class="outLoopSlide" style="display: none;">
+				<p>South Central Government Center7201 Outer Loop, STE. 128 <br>Louisville, Ky 40228</p><br><br>
+				<a href="tel:502-231-2700">Phone: 502-231-2700</a><br><br>
+				<div class="hourTable">
+					<table>
+						<tr>
+							<th>Weekday</th>
+							<th>Hours</th>
+							<th>Status</th>
+						</tr>
+						<tr>
+							<td>Sunday</td>
+							<td>Closed</td>
+						</tr>
+						<tr>
+							<td>Monday</td>
+							<td>9:00am - 4:00pm</td>
+							<td class="statusMon"></td>
+						</tr>
+						<tr>
+							<td>Tuesday</td>
+							<td>9:00am - 4:00pm</td>
+							<td class="statusTues"></td>
+						</tr>
+						<tr>
+							<td>Wednesday</td>
+							<td>9:00am - 4:00pm</td>
+							<td class="statusWed"></td>
+						</tr>
+						<tr>
+							<td>Thursday</td>
+							<td>9:00am - 2:00</td>
+							<td class="statusThrus"></td>
+						</tr>
+						<tr>
+							<td>Friday</td>
+							<td>9:00am - 5:00pm</td>
+							<td class="statusFri"></td>
+						</tr>
+						<tr>
+							<td>Saturday</td>
+							<td>Closed</td>
+						</tr>
+					</table>
+				</div><!--end hourTable-->
+			</div><!--end outLoopSlide -->
+			<div class="burghardLink">
+				<h3>Burghard Street</h3>
+			</div>
+			<div class="burghardSlide" style="display: none;">
+				<p>1402 Burghard St. Louisville, Ky 40210</p><br><br>
+				<a href="tel:502-635-6458">Phone: 502-635-6458</a><br><br>
+				<div class="hourTable">
+					<table>
+						<tr>
+							<th>Weekday</th>
+							<th>Hours</th>
+							<th>Status</th>
+						</tr>
+						<tr>
+							<td>Sunday</td>
+							<td>Closed</td>
+						</tr>
+						<tr>
+							<td>Monday</td>
+							<td>7:00am - 3:00pm</td>
+							<td class="statusMon"></td>
+						</tr>
+						<tr>
+							<td>Tuesday</td>
+							<td>10:00am - 4:00pm</td>
+							<td class="statusTues"></td>
+						</tr>
+						<tr>
+							<td>Wednesday</td>
+							<td>10:00am - 4:00pm</td>
+							<td class="statusWed"></td>
+						</tr>
+						<tr>
+							<td>Thursday</td>
+							<td>10:00am - 4:00</td>
+							<td class="statusThrus"></td>
+						</tr>
+						<tr>
+							<td>Friday</td>
+							<td>7:00am - 3:00pm</td>
+							<td class="statusFri"></td>
+						</tr>
+						<tr>
+							<td>Saturday</td>
+							<td>Closed</td>
+						</tr>
+					</table>
+				</div><!--end hourTable-->
+			</div><!--end burghardSlide-->
 		</div><!--end locations-->
-		<div id="contact">
+	<div class="content_seporator"></div>
+		<div class="contact">
+			<h2>Contact</h2>
+			<div class="phone">
+				<h3><a href="tel:502-899-7778">502-899-7778</a></h3>
+			</div>
+			<div class="email">
+				<h3><a href="mailto:noreply@domain.com">noreply@domain.com</a></email></h3>
+			</div>
+			<div class="fax">
+				<h3>Fax Number</h3>
+			</div>
 		</div><!--end contact-->
-		<div id="footer">
+		</div><!--end main content-->
+		<div class="footer">
+			<div class="ncua">
+				<p>Federally insured by NCUA. Your savings are federally insured to at least $250,000 and backed by the full faith and credit of the Unites States Government. National Credit Union Administration, a U.S. Government Agency.</p>
+			</div>
+			<div class="copyright">
+				<p>2016 Louisville Metro Police Credit Union</p>
+			</div>
 		</div><!--end footer-->
-	</div><!--end main content-->
+<script type="text/javascript" src="js\lmpocu.js"></script>
 </body>
 </HTML>
