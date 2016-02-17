@@ -67,7 +67,8 @@ h2 {
 	color: #091C85;
 }
 
-h3 {
+h3,
+th {
 	font-family: 'Noto Sans', sans-serif;
 	font-weight: 400;
 	font-size: 1.5rem;
@@ -75,10 +76,12 @@ h3 {
 	font-weight: bold;
 }
 
-p {
+p,
+td,
+label {
 	font-family: 'Noto Sans', sans-serif;
 	font-weight: 400;
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	color: #091C85;
 }
 
@@ -93,14 +96,15 @@ body {
            Home: Header
 =================================*/
 
-#header {
+.header,
+.footer {
 	width: 100%;
 	background-color: #091C85;
 	/*height: 75px;*/
 }
 
-#header h1 {
-	width: 86%;
+.header h1 {
+	width: 83%;
 	float: right;
 	text-align: center
 }
@@ -111,22 +115,25 @@ body {
            Home: Nav
 =================================*/
 
-#nav img{
+.nav img{
 	display: block;
 	width: 60px;
 	height: 60px;
 }
 
-#nav ul {
+.nav ul {
 	display: none;
 }
 
-#nav img:hover + ul, #nav ul:hover{
+/*.nav img:hover + ul, .nav ul:hover{
 	display: inline-block;
 	position: absolute;
 	background-color: #DBB50B;
 	width: 60%;
 	padding: 20px 0 20px 0;
+	border-right: 5px solid #091C85;
+	border-left: 5px solid #091C85;
+	border-bottom: 5px solid #091C85;*/
 }
 
 .login {
@@ -152,11 +159,11 @@ body {
 	margin: 25px;
 }
 
-#nav li {
+.nav li {
 	margin: 0 0 0 25px;
 }
 
-#nav a {
+.nav a {
 	font-family: 'Noto Sans', sans-serif;
 	font-weight: 400;
 	text-decoration: none;
@@ -166,7 +173,7 @@ body {
 	font-weight: bold;
 }
 
-#nav a:hover {
+.nav a:hover {
 	color: #fff;
 	font-weight: bold;
 }
@@ -177,18 +184,18 @@ body {
    Home: News & Announcements
 =================================*/
 
-#main_content {
+.main_content {
 	width: 100%;
 	margin: 25px 0 0 0;
 	padding-bottom: 40px;
 }
 
-#main_content h2 {
+.main_content h2 {
 	text-align: center;
 	padding-bottom: 15px;
 }
 
-#main_content p {
+.main_content p {
 	width: 90%;
 	text-align: justify;
 	margin: 0 auto;
@@ -206,24 +213,114 @@ body {
          Home: Products
 =================================*/
 
-#products h2 {
+.products h2,
+.locations h2,
+.contact h2
+{
 	padding: 0;
 }
 
-.products_sav {
-	height: 100px;
-	width: 150px;
-	margin: 25px 0 0 165px;
+.products h3,
+.locations h3,
+.contact h3,
+.contact a {
+	margin: 15px 0 0 0;
+	text-align: center;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #091C85;
+	line-height: 2rem;
+	font-weight: bold;
 }
 
-.products_check {
-	height: 150px;
-	width: 150px;
-	margin: 25px 0 0 165px;
+
+
+/*================================
+     Home: Products: Checking
+=================================*/
+
+.checking .info p,
+.saving .info p,
+.saving .rates p{
+	margin-top: 10px;
 }
 
-.product_loan {
-	height: 150px;
-	width: 150px;
-	margin: 25px 0 0 165px;
+
+
+/*================================
+     Home: Products: Savings
+=================================*/
+
+/*==============
+  Rate Table
+==============*/
+.saving table {
+	margin: 35px auto;
+	width: 90%;
+}
+
+.saving th {
+	width: 40%;
+	border: 4px solid #DBB50B;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 400;
+	height: 2.5rem;
+}
+.saving td {
+	border: 1px solid #DBB50B;
+	height: 2.5rem;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/*==============
+  Rate Calc
+==============*/
+
+.calc form {
+	width: 90%;
+	border: 4px solid #DBB50B;
+	margin: 25px auto;
+	line-height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.saving input {
+	font-color: #091C85;
+	font-size: 1.1rem;
+	height: 30px;
+}
+
+#submit {
+	color: #091C85;
+	font-size: 1.3rem;
+	font-weight: bold;
+	height: 30px;
+	border-radius: 5px;
+	
+
+}
+
+
+/*================================
+         Footer
+=================================*/
+
+.ncua p,
+.copyright p {
+	color: #DBB50B;
+	font-size: .75em;
+}
+
+.copyright p {
+	margin-top: 10px;
+	text-align: center;
 }
