@@ -1,0 +1,334 @@
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*================================
+           Mobile Style
+=================================*/
+
+/*================================
+           Font Standard
+=================================*/
+
+h1 {
+	margin: 9px 0;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
+	letter-spacing: .3rem;
+	color: #DBB50B;
+}
+
+h2 {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.7rem;
+	color: #091C85;
+	font-weight: bold;
+}
+
+h3,
+th {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.3rem;
+	color: #091C85;
+}
+
+p,
+td,
+label {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+	font-size: .95rem;
+	color: #091C85;
+}
+
+body {
+	width: 100%;
+	background-color: #f2f2f2;
+}
+
+
+
+/*================================
+           Links
+=================================*/
+
+a {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+	font-size: .95rem;
+	color: #091C85;
+	text-decoration: none;
+}
+
+a:hover {
+	font-size: 1.10em;
+}
+
+
+
+/*================================
+           Home: Header
+=================================*/
+
+.header,
+.footer {
+	width: 100%;
+	background-color: #091C85;
+	/*height: 75px;*/
+}
+
+.header h1 {
+	width: 83%;
+	float: right;
+	text-align: center
+}
+
+
+
+/*================================
+           Home: Nav
+=================================*/
+
+.nav img{
+	display: block;
+	width: 60px;
+	height: 60px;
+}
+
+.nav ul {
+	display: none;
+}
+
+/*.nav img:hover + ul, .nav ul:hover{
+	display: inline-block;
+	position: absolute;
+	background-color: #DBB50B;
+	width: 60%;
+	padding: 20px 0 20px 0;
+	border-right: 5px solid #091C85;
+	border-left: 5px solid #091C85;
+	border-bottom: 5px solid #091C85;*/
+}
+
+.login {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #091C85;
+	line-height: 1.5rem;
+}
+
+.form_button {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+	width: 65%;
+	margin: 0 auto;
+	margin: 5 0px;
+}
+
+.seporator {
+	width: 70%;
+	border-top: 3px solid #fff;
+	margin: 25px;
+}
+
+.nav li {
+	margin: 0 0 0 25px;
+}
+
+.nav a {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #091C85;
+	line-height: 2rem;
+	font-weight: bold;
+}
+
+.nav a:hover {
+	color: #fff;
+	font-weight: bold;
+}
+
+
+
+/*================================
+   Home: News & Announcements
+=================================*/
+
+.main_content {
+	width: 100%;
+	margin: 25px 0 0 0;
+	padding-bottom: 40px;
+}
+
+.main_content h2 {
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.main_content p {
+	width: 90%;
+	text-align: justify;
+	margin: 0 auto;
+}
+
+.content_seporator {
+	width: 75%;
+	border-bottom: 3px solid #DBB50B;
+	margin: 40px auto;
+}
+
+
+
+/*================================
+         Home: Products
+=================================*/
+
+.products h2,
+.locations h2,
+.contact h2
+{
+	padding: 0;
+}
+
+.products h3,
+.locations h3,
+.contact h3,
+.contact a {
+	margin: 15px 0 0 0;
+	text-align: center;
+	line-height: 2rem;
+}
+
+.backgroundBox {
+	display: block;
+	margin: 10px auto;
+	width: 85%;
+	padding: 15px 0;
+	border-radius: 5%;
+	background-color: rgba(76, 76, 76, 0.0666667);
+	box-shadow: rgb(136, 136, 136) 2px 2px 5px;
+
+}
+
+
+/*==============
+     Table
+==============*/
+ table {
+	width: 100%;
+}
+
+ th {
+	vertical-align: middle;
+	font-weight: 400;
+	height: 2.5rem;
+}
+ td {
+	height: 2.5rem;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/*================================
+     Home: Products: Savings
+=================================*/
+
+/*==============
+  Rate Calc
+==============*/
+.calc h3 {
+	margin: 0;
+}
+
+.calc form {
+	line-height: 25px;
+	font-family: 'Noto Sans', sans-serif;
+	color: #091C85;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+#submit {
+	font-family: 'Noto Sans', sans-serif;
+	color: #091C85;
+	font-size: 1.3rem;
+	font-weight: bold;
+	height: 30px;
+	border-radius: 5px;
+	
+
+}
+
+
+
+/*================================
+         Home: Locations
+=================================*/
+
+
+/*================================
+         Footer
+=================================*/
+
+.ncua p,
+.copyright p {
+	color: #DBB50B;
+	font-size: .75em;
+}
+
+.copyright p {
+	margin-top: 10px;
+	text-align: center;
+}
