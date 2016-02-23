@@ -112,11 +112,10 @@ console.log($deposit);
 $('.showDirection').click(function(){
 	if ( $('.direction').is(':hidden') ){
 		$('.direction').slideDown('slow');
-		$('.direction').css({"display": "block"});
-		$('.showDirection').replaceWith('<p class="showDirection">Hide Directions</p>');
+		$('.showDirection').html('<p class="showDirection">Hide Directions</p>');
 
 	}else{
 		$('.direction').slideUp('slow');
-		//$('.showDirection').replaceWith('<p>Show Directions</p>')
+		$('.showDirection').html('<p class="showDirection">Show Directions</p>');
 	}
 });
