@@ -106,3 +106,17 @@ $('#deposit').change(function($deposit){
 });
 
 console.log($deposit);
+
+//Direction Slider
+
+$('.showDirection').click(function(){
+	if ( $('.direction').is(':hidden') ){
+		$('.direction').slideDown('slow');
+		$('.direction').css({"display": "block"});
+		$('.showDirection').replaceWith('<p class="showDirection">Hide Directions</p>');
+
+	}else{
+		$('.direction').slideUp('slow');
+		//$('.showDirection').replaceWith('<p>Show Directions</p>')
+	}
+});
