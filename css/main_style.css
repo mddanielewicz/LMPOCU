@@ -118,13 +118,14 @@ a:hover {
 .footer {
 	width: 100%;
 	background-color: #091C85;
-	/*height: 75px;*/
+	height: 75px;
 }
 
 .header h1 {
-	width: 83%;
-	float: right;
-	text-align: center
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
 }
 
 
@@ -133,28 +134,39 @@ a:hover {
            Home: Nav
 =================================*/
 
-.nav img{
-	display: block;
-	width: 60px;
-	height: 60px;
+.navButton {
+	width: 90%;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 40px;
+	background-color: #DBB50B;
 }
 
-.nav ul {
+.navButton h2 {
+	text-align: center;
+	padding-top: 5px;
+}
+
+.navMenu {
+	position: relative;
+	z-index: 100;
+	display: none;
+	width: 90%;
+	margin: 0 auto;
+	background-color: #DBB50B;
+	border: 3px solid #fff;
+
+}
+
+.navSubMenu {
 	display: none;
 }
 
-/*.nav img:hover + ul, .nav ul:hover{
-	display: inline-block;
-	position: absolute;
-	background-color: #DBB50B;
-	width: 60%;
-	padding: 20px 0 20px 0;
-	border-right: 5px solid #091C85;
-	border-left: 5px solid #091C85;
-	border-bottom: 5px solid #091C85;*/
-}
 
 .login {
+	padding-top: 10px;
 	font-family: 'Noto Sans', sans-serif;
 	font-weight: 400;
 	font-size: 1.2rem;
@@ -203,6 +215,8 @@ a:hover {
 =================================*/
 
 .main_content {
+	position: relative;
+	z-index: 1;
 	width: 100%;
 	margin: 25px 0 0 0;
 	padding-bottom: 40px;
@@ -230,6 +244,10 @@ a:hover {
 /*================================
          Home: Products
 =================================*/
+
+.productSlide {
+	display: none;
+}
 
 .products h2,
 .locations h2,

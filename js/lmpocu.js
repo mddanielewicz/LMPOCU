@@ -1,62 +1,32 @@
-//Nav Slider
-//*********FIX CSS****************
-// $('navLink').click(function(){
-// 	if ( $('.nav ul').is(':hidden') ){
-// 		$('.nav ul').slideDown('slow');
-// 	}else {
-// 		$('.nav ul').slideUp('slow');
-// 	}
-// });
+//nav slider
+$('.navButton').click(function(e){
+  $(this).toggleClass('navButton--active');
+  //grabs the next element and showes it or hides it.
+	$(this).next().slideToggle('400ms');
+	});
 
-//Product Sliders
-//Checking SLider
+//nav sumMenu slider
+$('.navSubLink').click(function(e){
+  $(this).toggleClass('navSubLink--active');
+  //grabs the next element and showes it or hides it.
+	$(this).next().slideToggle('400ms');
+	});
 
-$('.checkLink').click(function(){
-	if ( $('.checkSlide').is(':hidden') ) {
-		$('.savSlide').slideUp('slow');
-		$('.loanSlide').slideUp('slow');
-		$('.investSlide').slideUp('slow');
-		$('.checkSlide').slideDown('slow');
-	}else{
-		$('.checkSlide').slideUp('slow');
-	}
-});
+//News and announcement scroller
 
-//Saving Slider
-$('.savLink').click(function(){
-	if ( $('.savSlide').is(':hidden') ) {
-		$('.checkSlide').slideUp('slow');
-		$('.loanSlide').slideUp('slow');
-		$('.investSlide').slideUp('slow');
-		$('.savSlide').slideDown('slow');
-	}else{
-		$('.savSlide').slideUp('slow');
-	}
-});
+//Container for messages
+//Dots for number of messages
+	//selected dot is displayed
+//Timer to scroll through messages
 
-//Loan Slider
-$('.loanLink').click(function(){
-	if ( $('.loanSlide').is(':hidden') ) {
-		$('.savSlide').slideUp('slow');
-		$('.checkSlide').slideUp('slow');
-		$('.investSlide').slideUp('slow');
-		$('.loanSlide').slideDown('slow');
-	}else{
-		$('.loanSlide').slideUp('slow');
-	}
-});
 
-//Investing Slider
-$('.investLink').click(function(){
-	if ( $('.investSlide').is(':hidden') ) {
-		$('.savSlide').slideUp('slow');
-		$('.checkSlide').slideUp('slow');
-		$('.loanSlide').slideUp('slow');
-		$('.investSlide').slideDown('slow');
-	}else{
-		$('.investSlide').slideUp('slow');
-	}
-});
+
+//product slider
+$('.productLink').click(function(e){
+  $(this).toggleClass('productLink--active');
+  //grabs the next element and showes it or hides it.
+	$(this).next().slideToggle('400ms');
+	});
 
 //Location Slider
 //Main Branch

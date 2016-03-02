@@ -8,44 +8,46 @@
 <body>
 	<div class="header">
 		<h1>LMPOCU</h1>
-			<div class="nav">
-				<img src="img\menu.png">
-					<ul>
-						<li class="login">
-							<form action="#">
-								<label><h3>Online Banking</h3></label>
-								<label for="username">Username:</label><br>
-								<input type="text" id="username" name="username"><br>
-								<label for="password">Password:</label><br>
-								<input type="password" id="password" name="password"><br>
-								<input type="submit" value="Login" class="form_button">
-							</form>
-						</li>
-						<div class="seporator"></div>
-						<li class="nav_link"><a href="#">Home</a></li>
-						<li class="nav_link"><a href="#">Products</a>
-							<ul>
-								<li class="sec_link"><a href="#">Checking</li>
-								<li class="sec_link"><a href="#">Savings</li>
-								<li class="sec_link"><a href="#">Loans</li>
-								<li class="sec_link"><a href="#">Investing</li>
-							</ul>
-						</li>
-						<li class="nav_link"><a href="#">Staff</a>
-							<ul>
-								<li class="sec_link"><a href="#">Board Members</li>
-								<li class="sec_link"><a href="#">Management Staff</li>
-								<li class="sec_link"><a href="#">Loan Officers</li>
-								<li class="sec_link"><a href="#">Customer Service</li>
-							</ul>
-						</li>
-						<li class="nav_link"><a href="#">History</a></li>
-						<li class="nav_link"><a href="#">Policies</a></li>
-						<li class="nav_link"><a href="#">Membership</a></li>
-						<li class="nav_link"><a href="#">Locations</a></li>
+		</div><!--end header-->
+	<div class="nav">
+	<div class="navButton"><h2>Navigation &#9660</h2></div>
+	<div class="navMenu">
+			<ul>
+				<li class="login">
+					<form action="#">
+						<label><h3>Online Banking</h3></label>
+						<label for="username">Username:</label><br>
+						<input type="text" id="username" name="username"><br>
+						<label for="password">Password:</label><br>
+						<input type="password" id="password" name="password"><br>
+						<input type="submit" value="Login" class="form_button">
+					</form>
+				</li>
+				<div class="seporator"></div>
+				<li class="nav_link"><a href="#">Home</a></li>
+				<li class="nav_link navSubLink"><a href="#">Products</a>
+					<ul class="navSubMenu">
+						<li class="sec_link"><a href="#">Checking</li>
+						<li class="sec_link"><a href="#">Savings</li>
+						<li class="sec_link"><a href="#">Loans</li>
+						<li class="sec_link"><a href="#">Investing</li>
 					</ul>
-			</div><!--end nav-->
-	</div><!--end header-->
+				</li>
+				<li class="nav_link navSubMenu"><a href="#">Staff</a>
+					<ul>
+						<li class="sec_link"><a href="#">Board Members</li>
+						<li class="sec_link"><a href="#">Management Staff</li>
+						<li class="sec_link"><a href="#">Loan Officers</li>
+						<li class="sec_link"><a href="#">Customer Service</li>
+					</ul>
+				</li>
+				<li class="nav_link"><a href="#">History</a></li>
+				<li class="nav_link"><a href="#">Policies</a></li>
+				<li class="nav_link"><a href="#">Membership</a></li>
+				<li class="nav_link"><a href="#">Locations</a></li>
+		</ul>
+	</div><!--end navMenu-->
+	</div><!--end nav-->
 	<div class="main_content">
 		<div class="news">
 			<h2>News and announcements</h2>
@@ -54,16 +56,16 @@
 	<div class="content_seporator"></div>
 		<div class="products">
 			<h2>Products</h2>
-			<div class="checkLink">
+			<div class="checkLink productLink">
 				<h3>Checking</h3>
 			</div>
-			<div class="checkSlide" style="display:none;">
+			<div class="checkSlide productSlide" style="display:none;">
 				
 				<div class="info backgroundBox">
 					<p>Regular checking at LMPOCU is built to be quick and easy.<br><br> Members enrolled can access their funds at any 5/3rd Bank without a service fee.<br><br>Also, your debit card can be used at any business that accepts MasterCard!<br><br>All of these benefits can be enjoyed without worrying about maintaining a minimum balance!</p>
 				</div></div>
-			<div class="savLink"><h3>Saving</h3></div>
-			<div class="savSlide" style="display: none">
+			<div class="savLink productLink"><h3>Saving</h3></div>
+			<div class="savSlide productSlide">
 				<div class="info backgroundBox">
 					<p>We strive to make saving simple for you. We do not require a minimum balance before you start to earn dividends.<br><br>Enjoy opening as many linked accounts to help you as you save for diferent life projects.<br><br>When you open an account five dollars is held as your membership stake in our credit union.</p>
 				</div>
@@ -115,8 +117,8 @@
 
 				</div>
 			</div>
-			<div class="loanLink"><h3>Financing</h3></div>
-			<div class="loanSlide" style="display: none">
+			<div class="loanLink productLink"><h3>Financing</h3></div>
+			<div class="loanSlide productSlide">
 				<div class="info backgroundBox">
 					<p>General information about checking products. Maybe make a list.</p>
 				</div>
@@ -127,8 +129,8 @@
 					<p>Calculator will go here.</p>
 				</div>
 			</div>
-			<div class="investLink"><h3>Investing</h3></div>
-			<div class="investSlide" style="display: none">
+			<div class="investLink productLink"><h3>Investing</h3></div>
+			<div class="investSlide productSlide">
 				<div class="info backgroundBox">
 					<p>General information about checking products. Maybe make a list.</p>
 				</div>
